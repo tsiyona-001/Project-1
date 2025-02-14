@@ -1,0 +1,80 @@
+/* Body styles */
+body {
+background: linear-gradient(106deg,#b5838d,#fdf5d5,#f7b9c4);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-family: Georgia, Times New Roman;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container for the entire collection section */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Heading style */
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Flexbox for the collection grid */
+.collection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling for each item (dress) */
+.item {
+    width: 250px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.7); /* Transparent white background */
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image styling within each item */
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect to enlarge the image */
+.item:hover img {
+    transform: scale(1.05);
+}
+
+/* Title inside each item */
+.item h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5); /* Background for text for readability */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Hover effect for items */
+.item:hover {
+    transform: translateY(-10px); /* Lifts the item up slightly when hovered */
+}

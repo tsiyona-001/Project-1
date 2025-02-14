@@ -1,0 +1,121 @@
+
+  body {
+        font-family: serif, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(100deg, #3f7fbc,#868665);
+    }
+
+  .container {
+        width: 600px;
+        height: 400px;
+        background-color: #FBF3F2;
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0px 20px rgba(255, 255, 255, 0.9);
+        position: relative;
+    }
+
+  .form-container {
+        width: 50%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease-in-out;
+   }
+
+  .sign-in-container {
+        transform: translateX(0);
+   }
+
+  .sign-up-container {
+        transform: translateX(100%);
+   }
+
+  .overlay-container {
+       width: 50%;
+       background: linear-gradient(to right, #ff416c, #ff4b2b);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       color: white;
+       position: absolute;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       transition: transform 0.5s ease-in-out;
+   }
+
+  .container.active .sign-in-container {
+       transform: translateX(-100%);
+   }
+
+  .container.active .sign-up-container {
+       transform: translateX(0);
+   }
+
+  .container.active .overlay-container {
+       transform: translateX(-100%);
+   }
+   h2 {
+       margin: 0;
+   }
+
+   input {
+       margin: 10px 0;
+       padding: 10px;
+       width: 100%;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+   }
+
+  button {
+       background-color: #ff4b2b;
+       color: white;
+       border: none;
+       padding: 10px 20px;
+       border-radius: 5px;
+       cursor: pointer;
+       transition: background-color 0.3s;
+  }
+
+  button:hover {
+       background-color: #ff3a1a;
+  }
+  .overlay-content {
+       text-align: center;
+  }
+
+  .overlay-content button {
+       background-color: transparent;
+       border: 2px solid white;
+  }
+ .social-login {
+       display: flex;
+       gap: 30px;
+       margin: 40px 0;
+  }
+
+ .social-login img {
+       width: 40px;
+       height: 40px;
+       cursor: pointer;
+  }
+ .message {
+       margin-top: 10px;
+       color: black;
+  }
+ .error{
+       margin-top: 10px;
+       color:red;
+  }
+        
+  
