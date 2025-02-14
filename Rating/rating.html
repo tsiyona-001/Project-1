@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating</title>
+    <link rel="stylesheet" href="rating.css">
+</head>
+<body>
+
+    <div class="floating">
+        <div class="card glass" id="rating-card">
+            <div class="star-icon">⭐</div>
+              <h2>How did we do?</h2>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            
+            <div class="ratings">
+                <button class="rating-btn" data-rating="1">1</button>
+                <button class="rating-btn" data-rating="2">2</button>
+                <button class="rating-btn" data-rating="3">3</button>
+                <button class="rating-btn" data-rating="4">4</button>
+                <button class="rating-btn" data-rating="5">5</button>
+            </div>
+
+            <button class="submit-btn" id="submit-btn">SUBMIT</button>
+        </div>
+
+        <div class="card glass hidden" id="thank-you-card">
+            <img src="image\thankyou.svg" alt="Thank You">
+            <p class="selected-rating">You selected <span id="selected-value">4</span> out of 5</p>
+            <h2>Thank you!</h2>
+            <p> We appreciate you taking the time to give a rating. If you ever need more support,don't hesitate to get in touch!</p>
+        </div>
+    </div>
+
+    <script src="rating.js"></script>
+</body>
+</html>

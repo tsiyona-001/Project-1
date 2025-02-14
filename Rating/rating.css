@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Times New Roman, Georgia;
+    
+}
+
+body {
+    background: linear-gradient(106deg,#0f2f24,#2082a6,#2d4d42);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.star-icon {
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.9);
+    transition: all 0.4s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin: 15px 0;
+    color: #800000;
+}
+
+p {
+    color: #804000;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.rating-btn {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: #3C0008;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rating-btn:hover, .rating-btn.selected {
+    background: rgba(255, 140, 0, 0.9);
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.9);
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #e88504,#dc6601);
+    border: none;
+    color: white;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #ff758c, #d24e01);
+    box-shadow: 0 0 15px rgba(255, 94, 120, 0.9);
+}
+
+.selected-rating {
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
