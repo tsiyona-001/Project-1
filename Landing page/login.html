@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Form</title>
+    <link rel="stylesheet" href="css/login.css">
+    
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <h4>Do you have an account?</h4>
+           <h2> Sign in</h2>
+            <div class="social-login">
+                <img src="images/social/google.jpg" alt="Google" title="Sign up with Google">
+                <img src="images/social/apple.jpg" alt="Apple" title="Sign up with Apple">
+                <img src="images/social/fb.jpg" alt="Facebook" title="Sign up with Facebook"></div>
+            <input type="email" id="signInEmail" placeholder="*Email" />
+            <input type="password" id="signInPassword" placeholder="*Password" />
+            <button onclick="handleSignIn()">
+            Sign In</button>
+             <div id="signInMessage" class="message"></div>  <!-- Message area for sign-in-->
+        </div>
+        <div class="form-container sign-up-container">
+            <h2>Sign up</h2>
+            <div class="social-login">
+                <img src="images/social/google.jpg" alt="Google" title="Sign up with Google">
+                <img src="images/social/apple.jpg" alt="Apple" title="Sign up with Apple">
+                <img src="images/social/fb.jpg" alt="Facebook" title="Sign up with Facebook"></div>
+            <input type="text" id="signUpName" placeholder="*Full Name" />
+            <input type="email" id="signUpEmail" placeholder="*Email" />
+            <input type="password" id="signUpPassword" placeholder="*Password" />
+            <button onclick="handleSignUp()">Sign Up</button>
+            <div id="signUpMessage" class="message"></div>  
+        </div>
+        <div class="overlay-container">
+            <div class="overlay-content">
+                <h2>Welcome, again!</h2>
+                <p>Enter your personal details and start your journey with us.🤝</p>
+                <button id="toggleButton">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html> 
